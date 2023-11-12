@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>Consulte aqui a sua Nacionalidade:</p>
+    Qual seu país? <input type="text" name="txtnacao" id="txtnacao">
+    <input type="button" value="Consultar" onclick="resultado()">
+    <div id = "res">
+
+    </div>
+    <script>
+        function resultado() {
+            var txtValorNacao = document.getElementById('txtnacao')
+            var res = document.querySelector('div#res')
+            var nacao = txtValorNacao.value.toString()
+            res.innerHTML = `<p>Você nasceu no ${nacao}!</p>`
+        }
+    </script>
+</body>
+</html>
