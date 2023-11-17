@@ -19,6 +19,11 @@
             var res = document.querySelector('div#res')
             var nacao = txtValorNacao.value.toString()
             res.innerHTML = `<p>Você nasceu no ${nacao}!</p>`
+            if (nacao.toLowerCase() == 'brasil') {
+                res.innerHTML += 'Você é BRASILEIRO.'
+            } else {
+                res.innerHTML += 'Você é ESTRANGEIRO.'
+            }
         }
     </script>
 </body>
