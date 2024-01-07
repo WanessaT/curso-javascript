@@ -2,7 +2,7 @@ var agora = new Date()
 var diaSem = agora.getDay()
 console.log(diaSem)
 
-switch(diaSem) {
+switch(diaSem) { /*switch é uma expressão, não é condição */
     case 0:  
     console.log('Domingo')
     break
